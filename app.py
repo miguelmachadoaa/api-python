@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-import mysql.connector
+import mysql.connector 
 
 app = Flask(__name__)
 
