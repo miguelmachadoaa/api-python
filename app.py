@@ -11,6 +11,10 @@ db_config = {
     'database': 'maymicov_agenciamaymi' # Nombre de la base de datos
 }
 
+@app.route('/')
+def index():
+    return "API para MySQL"
+
 
 # Ruta para obtener datos de MySQL
 @app.route('/data', methods=['GET'])
