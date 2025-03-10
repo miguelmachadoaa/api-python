@@ -25,7 +25,7 @@ database_url = os.getenv("DATABASE_URL")
 
 cred = credentials.Certificate('presupuesto-d827e-firebase-adminsdk-nwxyl-0ee0565833.json') # Cambia por tu archivo JSON
 firebase_admin.initialize_app(cred, {
-    'databaseURL': database_url # Cambia por tu URL de Firebase
+    'databaseURL': "https://api-5b334-default-rtdb.firebaseio.com" # Cambia por tu URL de Firebase
 })
 
 @app.route('/')
